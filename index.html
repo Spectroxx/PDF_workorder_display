@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PDF Workorder Viewer | Main</title>
+        <link rel="icon" type="image/png" href="/images/favicon.png"/>
+    </head>
+        
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/button.css">
+
+    <main>
+
+        <div class="align-centre-div">
+            <embed src="files/1.pdf" type="application/pdf" width="24%" height="50%" />
+            <embed src="files/2.pdf" type="application/pdf" width="24%" height="50%" />
+            <embed src="files/3.pdf" type="application/pdf" width="24%" height="50%" />
+            <embed src="files/4.pdf" type="application/pdf" width="24%" height="50%" />
+
+            <!--
+            <div class="is-grouped">
+                <button class="button">SWITCH 1</button>
+                <button class="button">SWITCH 2</button>
+                <button class="button">SWITCH 3</button>
+                <button class="button">SWITCH 4</button>
+            </div>
+        -->
+
+        <form action="php/upload-pdf.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" size="50" />
+            <input type="submit" value="Upload" />
+        </form>
+
+        </div>
+
+    </main>
+
+</html>
