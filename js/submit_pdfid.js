@@ -5,9 +5,9 @@ $(document).ready(function(){
             pdfid: $('#pdfid').val()
         });
     });
-
 });
 */
+
 $(document).ready(function () {
     $('#pdfid_submit').on('submit', function(e) {
         e.preventDefault();
