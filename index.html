@@ -1,38 +1,47 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">  
 <html>
     <head>
-        <title>PDF Workorder Viewer | Main</title>
+        <title>PDF Workorder Viewer | Home</title>
         <link rel="icon" type="image/png" href="/images/favicon.png"/>
     </head>
         
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/settings.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/submit_pdfid.js"></script>
 
     <main>
-
+        
+        <!--- 
         <div class="align-centre-div">
-            <embed src="files/1.pdf" type="application/pdf" width="24%" height="50%" />
-            <embed src="files/2.pdf" type="application/pdf" width="24%" height="50%" />
-            <embed src="files/3.pdf" type="application/pdf" width="24%" height="50%" />
-            <embed src="files/4.pdf" type="application/pdf" width="24%" height="50%" />
-
-            <!--
-            <div class="is-grouped">
-                <button class="button">SWITCH 1</button>
-                <button class="button">SWITCH 2</button>
-                <button class="button">SWITCH 3</button>
-                <button class="button">SWITCH 4</button>
+            
+            <embed src="files/1.pdf" type="application/pdf" width="24%" height="50%"/>
+            <embed src="files/2.pdf" type="application/pdf" width="24%" height="50%"/>
+            <embed src="files/3.pdf" type="application/pdf" width="24%" height="50%"/>
+            <embed src="files/4.pdf" type="application/pdf" width="24%" height="50%"/>
+            <embed src="files/5.pdf" type="application/pdf" width="24%" height="50%"/>
+            <embed src="files/6.pdf" type="application/pdf" width="24%" height="50%"/>
+            <embed src="files/7.pdf" type="application/pdf" width="24%" height="50%"/>
+            <embed src="files/8.pdf" type="application/pdf" width="24%" height="50%"/>
+            
+        </div>
+            <div style="position: fixed; top: 0px; right: 570px;" class="dropdown">
+                <p style="padding: 4px; background-color: white; position: fixed; top: -35px; right:0px; font-size:30px;">&#9776;</p>
+                <div class="dropdown-content">
+                </div>
             </div>
         -->
-
-        <form action="php/upload-pdf.php" method="POST" enctype="multipart/form-data">
-            <input type="file" name="file" size="50" />
-            <input type="submit" value="Upload" />
-        </form>
-
-        </div>
-
+            <form action="php/upload-pdf.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" size="50"/>
+                <input type="submit" value="Upload"/>
+            </form>
+        
+            <div>
+                <input type="text"id="pdfid">
+                <button type="submit" id="pdfid_submit">Submit</button>
+            </div>
     </main>
-
 </html>
