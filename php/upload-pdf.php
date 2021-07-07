@@ -1,10 +1,4 @@
 <?php
-if(isset($_POST['pdfid'])){
-	$pdfid = $_POST['pdfid'];
-	echo $pdfid;
-}
-
-
 if(isset($_FILES['file'])){
     $file = $_FILES['file'];
     $file_name = $file['name'];
@@ -14,10 +8,12 @@ if(isset($_FILES['file'])){
     $file_ext = explode('.', $file_name);
     $file_ext = strtolower(end($file_ext));
     $allowed_file_types = array('pdf', 'png', 'jpg');
+	$pdfid = $_POST['pdfid'];
+	
     if(in_array($file_ext, $allowed_file_types)){
         if($file_error === 0){
             if($file_size < 999999999){
-                $file_name_new = rename($file_tmp, $pdfid;) . '.' . $file_ext;
+                $file_name_new = rename($file_tmp, $pdfid) . '.' . $file_ext;
                 echo $file_destination = '/var/www/pdf.spectrox.ca/files/' . $file_name_new;
                 if(move_uploaded_file($file_tmp, $file_destination)){
                     #header('refresh: 1; url= redirrect');
