@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">  
+<meta charset="UTF-8"/>
 <html>
     <head>
         <title>PDF Workorder Viewer | Home</title>
@@ -14,32 +14,42 @@
     <script type="text/javascript" src="js/submit_pdfid.js"></script>
 
     <main>
-        <!--- 
-        <div class="align-centre-div">
-            <embed src="files/1.pdf" type="application/pdf" width="24%" height="50%"/>
-            <embed src="files/2.pdf" type="application/pdf" width="24%" height="50%"/>
-            <embed src="files/3.pdf" type="application/pdf" width="24%" height="50%"/>
-            <embed src="files/4.pdf" type="application/pdf" width="24%" height="50%"/>
-            <embed src="files/5.pdf" type="application/pdf" width="24%" height="50%"/>
-            <embed src="files/6.pdf" type="application/pdf" width="24%" height="50%"/>
-            <embed src="files/7.pdf" type="application/pdf" width="24%" height="50%"/>
-            <embed src="files/8.pdf" type="application/pdf" width="24%" height="50%"/>  
-        </div>
-            <div style="position: fixed; top: 0px; right: 570px;" class="dropdown">
-                <p style="padding: 4px; background-color: white; position: fixed; top: -35px; right:0px; font-size:30px;">&#9776;</p>
-                <div class="dropdown-content">
-                </div>
+            <div class="align-centre-div">
+                <embed src="files/1.pdf#zoom=125,10,500#toolbar=0" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/2.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/3.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/4.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/5.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/6.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/7.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/8.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/9.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/10.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/11.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/12.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/13.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/14.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/15.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
+                <embed src="files/16.pdf#zoom=125,10,500" type="application/pdf" width="24%" height="50%"/>
             </div>
-        -->
-            <form action="php/upload-pdf.php" method="POST" enctype="multipart/form-data">
-                <input type="file" name="file" size="50"/>
-                <input type="submit" value="Upload"/>
-            </form>
-      
-            <form>
-                <input type="text"id="pdfid">
-                <button type="submit" id="pdfid_submit">Submit</button>
-            </form>
-			
+            
+        
+            
+            <div style="position: fixed; top: 0px; right: 35px;" class="dropdown">
+                <p style="padding: 6px; background-color: white; position: fixed; top: -32px; right: 0px; font-size:30px;">&#9776;</p>
+                <div class="dropdown-content" style="padding: 24px;">
+
+
+                    <!-- Dont you fucking dare touch this form Julien-->
+                    <form action="php/upload-pdf.php" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="file" size="50"/>
+                        <input type="text" name="pdfid">
+                        <input type="submit" value="Upload" name="pdfid_submit"/>
+                    </form>
+
+                </div>
+
+            </div>
     </main>
+
 </html>
