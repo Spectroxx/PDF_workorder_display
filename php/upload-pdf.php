@@ -1,5 +1,12 @@
 <?php  
-#$pdfid = (isset($_POST['pfdfid']) ? $_POST['pdfid'] : null);
+/**
+ * @author Julien Westman
+ * @copyright 2021 Julien Westman 
+ * @since  Version 0.01
+ * @version Version 0.10
+ * @uses To retrieve and rename uploaded files.
+ */
+
 $pdfid = $_POST["pdfid"];
 echo "File Name:  $pdfid . <br>";
   
@@ -34,7 +41,5 @@ if(isset($_FILES['file'])){
 }
 
 rename('/var/www/pdf.spectrox.ca/files/' . $file_name_new, '/var/www/pdf.spectrox.ca/files/' . $pdfid . '.' . $file_ext);
-
-
 
 ?>

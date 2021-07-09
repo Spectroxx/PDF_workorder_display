@@ -13,4 +13,16 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+  animation:fading 0.2s
+}
+@keyframes fading{
+  0%{
+      opacity:0
+  }
+  50%{
+      opacity:0.5
+  }
+  100%{
+      opacity:1
+  }
 }
