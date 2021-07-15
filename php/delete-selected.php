@@ -7,10 +7,12 @@
  * @uses To delete selected files from /files/*
  */
 
-$chkbx = json_decode($_POST['chkbx']);
-$chkbx = explode(',', $chkbx);
-var_dump($chkbx);
 /*
+$chkbx = json_decode(stripslashes($_POST['chkbx']));
+foreach($chkbx as $c){
+echo $c;
+}
+var_dump($chkbx);
 if(isset($_POST['unlink_selected'])){
     $file_path = ("/var/www/pdf.spectrox.ca/files");
     print_r($files = glob($file_path."/.*",  GLOB_NOCHECK));
@@ -29,4 +31,8 @@ if(isset($_POST['unlink_selected'])){
     } 
 }
 */
+
+
+
+
 ?>
