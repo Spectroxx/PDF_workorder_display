@@ -174,7 +174,6 @@ $_CONFIG['newdir_enable'] = true;
 $_CONFIG['delete_enable'] = true;
 $_CONFIG['rename_enable'] = true;
 
-
 /*
  * UPLOADING
  */
