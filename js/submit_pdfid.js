@@ -1,3 +1,4 @@
+//submit_pdfid.js
 $(document).ready(function(){
     $('pdfid_submit').click(function(){
         $.post("upload-pdf.php",{
