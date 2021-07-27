@@ -7,6 +7,7 @@
  * @uses To retrieve and rename uploaded files.
  */
 
+ob_start();
 $pdfid = $_POST["pdfid"];
 echo "File Name:  $pdfid . <br>";
   
@@ -24,11 +25,11 @@ if(isset($_FILES['file'])){
         if($file_error === 0){
             if($file_size < 999999999){
                 $file_name_new = uniqid('', true) . '.' . $file_ext;
-                $file_destination = '/var/www/pdf.spectrox.ca/files/' . $file_name_new;
+                $file_destination = '/home2/glavin/pdf.glavin.net/resources/files/' . $file_name_new;
                 if(move_uploaded_file($file_tmp, $file_destination)){
-                    header("Location: https://pdf.spectrox.ca");
                     echo '<script>alert("Success! Your file has been uploaded!")</script>';
                     $file_destination;
+		    header("Location: https://pdf.glavin.net");
                 }else{
                     echo "<br> There was an error uploading your file!\n";
                     echo "<br>";
@@ -40,6 +41,6 @@ if(isset($_FILES['file'])){
     }
 }
 
-rename('/var/www/pdf.spectrox.ca/files/' . $file_name_new, '/var/www/pdf.spectrox.ca/files/' . $pdfid . '.' . $file_ext);
+rename('/home2/glavin/pdf.glavin.net/resources/files/' . $file_name_new, '/home2/glavin/pdf.glavin.net/resources/files/' . $pdfid . '.' . $file_ext);
 
 ?>
