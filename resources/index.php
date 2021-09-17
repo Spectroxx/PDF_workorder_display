@@ -1349,7 +1349,6 @@ body.mobile #upload {
 /*   Or just use PHP base64_encode() function                              */
 /***************************************************************************/
 
-
 $_IMAGES = array();
 
 $_IMAGES["arrow_down"] = "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0
