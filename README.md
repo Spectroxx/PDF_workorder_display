@@ -12,4 +12,4 @@ PDF Display is a way for you to display multiple PDF files in an orderly mannor 
 Install Encode Explorer via `resources/`
 
 ### License
-*Licensed under the MIT License. See License.txt in the project root for license information.*
+*Licensed under the GPL-3.0 License. See License.txt in the project root for license information.*
