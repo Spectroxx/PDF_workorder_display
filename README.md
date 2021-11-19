@@ -6,7 +6,7 @@ PDF Display is a way for you to display multiple PDF files in an orderly mannor 
 
 ### Installation
 
-`cd /var/www/`
+`cd [webserver directory]`
 `git clone https://github.com/Spectroxx/pdf-display.git`
 
 Install Encode Explorer via `resources/`
