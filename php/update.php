@@ -7,17 +7,12 @@
  * @uses To retrieve and apply updates from github repository.
  */
 
-$output=null;
-$retval=null;
-
-function update() {
-    exec('~/pdf.glavin.net/bash/update.sh', $output, $retval);
-}
+ini_set('display_errors', 1);
+$contents = file_get_contents('~/pdf.glavin.net/bash/update.sh');
 
 if(isset($_POST['update_files'])){
-    update();
-    echo "Returned with status $retval and output:\n";
-    print_r($output);
+    echo shell_exec($contents);
+    echo "Success!";
 }
 
 ?>
