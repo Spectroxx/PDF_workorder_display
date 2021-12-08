@@ -12,7 +12,7 @@ $output=null;
 $retval=null;
 
 if(isset($_POST['update_files'])){
-    exec('sh /home2/glavin/pdf.glavin.net/bash/update.sh', $output, $retval);
+    exec('sh /home2/glavin/pdf.glavin.net/shell/update.sh', $output, $retval);
     echo "Returned with status $retval and output:\n";
     print_r($output);
 }
