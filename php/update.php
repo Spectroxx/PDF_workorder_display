@@ -8,11 +8,13 @@
  */
 
 ini_set('display_errors', 1);
-$contents = file_get_contents('~/pdf.glavin.net/bash/update.sh');
+$output=null;
+$retval=null;
 
 if(isset($_POST['update_files'])){
-    echo shell_exec($contents);
-    echo "Success!";
+    exec('sh /home2/glavin/pdf.glavin.net/bash/update.sh', $output, $retval);
+    echo "Returned with status $retval and output:\n";
+    print_r($output);
 }
 
 ?>
