@@ -13,6 +13,8 @@ $output=null;
 if(isset($_POST['update_files'])){
     exec('sh /home2/glavin/pdf.glavin.net/shell/update.sh', $output);
     print_r($output);
+    sleep(3);
+    header("Location: https://pdf.glavin.net");
 }
 
 ?>
