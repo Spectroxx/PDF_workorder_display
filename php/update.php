@@ -7,5 +7,11 @@
  * @uses To retrieve and apply updates from github repository.
  */
 
-shell_exec('cd tmp/ && git clone https://github.com/Spectroxx/pdf-display.git && mv --update --force pdf-display/* ~/pdf.glavin.net/')
+
+if(isset($_Post['update_files']){
+    update();
+}
+function update() {
+    shell_exec('cd tmp/ && git clone https://github.com/Spectroxx/pdf-display.git && mv --update --force pdf-display/* ~/pdf.glavin.net/')
+}
 ?>
