@@ -1,7 +1,7 @@
 #!/bin/sh
 #Updates PDF Display
 
-git clone https://github.com/Spectroxx/pdf-display.git home2/glavin/tmp/
-rsync -a --exclude={'pdf-display/resources/*','pdf-display/README.md','pdf-display/LICENSE','pdf-display/.git/'} home2/glavin/tmp/pdf-display/* ~/pdf.glavin.net/
-#rm -rf tmp/pdf-display/
+git clone https://github.com/Spectroxx/pdf-display.git temp-pdf-display
+rsync -a --exclude={'pdf-display/resources/*','pdf-display/README.md','pdf-display/LICENSE','pdf-display/.git/'} temp-pdf-display/* ~/pdf.glavin.net/
+rm -rf tmp-pdf-display/
 #TEST
