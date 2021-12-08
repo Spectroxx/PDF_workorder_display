@@ -9,6 +9,7 @@
 
 ini_set('display_errors', 1);
 $output=null;
+ob_start();
 
 if(isset($_POST['update_files'])){
     exec('sh /home2/glavin/pdf.glavin.net/shell/update.sh', $output);
