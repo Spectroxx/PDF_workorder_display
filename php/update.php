@@ -7,5 +7,14 @@
  * @uses To retrieve and apply updates from github repository.
  */
 
-shell_exec('cd tmp/ && git clone https://github.com/Spectroxx/pdf-display.git && mv --update --force pdf-display/* ~/pdf.glavin.net/')
+ini_set('display_errors', 1);
+$output=null;
+$retval=null;
+
+if(isset($_POST['update_files'])){
+    exec('sh /home2/glavin/pdf.glavin.net/bash/update.sh', $output, $retval);
+    echo "Returned with status $retval and output:\n";
+    print_r($output);
+}
+
 ?>
