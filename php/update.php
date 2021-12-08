@@ -7,11 +7,17 @@
  * @uses To retrieve and apply updates from github repository.
  */
 
+$output=null;
+$retval=null;
 
-if(isset($_Post['update_files'])){
-    update();
-}
 function update() {
-    shell_exec('cd tmp/ && git clone https://github.com/Spectroxx/pdf-display.git && mv --update --force pdf-display/* ~/pdf.glavin.net/');
+    exec('~/pdf.glavin.net/bash/update.sh', $output, $retval);
 }
+
+if(isset($_POST['update_files'])){
+    update();
+    echo "Returned with status $retval and output:\n";
+    print_r($output);
+}
+
 ?>
