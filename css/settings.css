@@ -18,19 +18,21 @@
      border: 2px solid #555555;
  }
 .update {
-    background-color: greenyellow;
-    border-color: greenyellow;
-    border-radius: 4px;
     position: relative;
-    left: 438px;
-    bottom: -40px;
+    left: 488px;
+    bottom: -80px;
 }
-.admin{
+.admin {
     background-color: #f44336;
     border-color: #f44336;
     border-radius: 4px;
     position: absolute;
     bottom: 20px;
+}
+
+.menu {
+    position: relative;
+    bottom: -20px;
 }
 
 /*Dropdown*/
@@ -40,11 +42,11 @@
      z-index: 2;
 }
  .dropdown-content {
-     display: none;
+     /*display: none;*/
      background-color: #f9f9f9;
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-     width: 26;
-     height: 8;
+     width: 26vw;
+     height: 8vh;
      z-index: 2;
      overflow: hidden;
 }
