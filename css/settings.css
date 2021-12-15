@@ -35,6 +35,12 @@
     bottom: -25px;
 }
 
+.ver {
+    position: relative;
+    color: lightgrey;
+    overflow: hidden;
+    left: 480px;
+}
 /*Dropdown*/
  .dropdown {
      position: absolute;
@@ -50,6 +56,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
     overflow: hidden;
+    height: 200px;
 }
  .dropdown:hover .dropdown-content {
      display: block;
@@ -86,6 +93,17 @@
  * {
      scrollbar-color: #fff #000;
 }
+/* No selection*/
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
 /*Scroll-block*/
 .scroll-block {
     position: fixed;

@@ -28,7 +28,7 @@
       <p style="padding: 6px; background-color: rgb(255, 255, 255); position: fixed; top: -32px; right: 0px; font-size: 30px;">
         <i class="fas fa-bars fa-lg menu"></i>
       </p>
-      <div class="dropdown-content" style="padding: 24px;">
+      <div class="dropdown-content noselect" style="padding: 24px;">
         <form action="php/upload-pdf.php" method="POST" enctype="multipart/form-data">
           <input type="file" name="file" size="50" />
           <input type="number" name="pdfid" />
@@ -43,6 +43,7 @@
           <br />
           <input class="btn btn-outline-danger btn-sm" type="submit" value="Admin Panel"/>
         </form>
+        <p class="ver noselect">Ver. 2.23-D</p>
       </div>
     </div>
   </main>
